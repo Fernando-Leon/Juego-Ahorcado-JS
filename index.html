@@ -8,8 +8,23 @@
     <link rel="stylesheet" href="CSS/main.css" type="text/css">
 </head>
 <body>
-    <h1>Inicio Juego del Ahorcado</h1>
-
+    <div id="container-main">
+        <div id="instruccions-content">
+            <h1>Juego Ahorcado</h1>
+            <p>Encuentras la frase antes de ser ahorcado, cada intento fallido es un paso más a la muerte.</p>
+        </div>
+        <div id="container-zone-player">
+            <div id="container-string"></div>
+            <div id="container-body-person"></div>
+        </div>
+        <div id="abc-container">
+            
+        </div>
+        <div id="information-content">
+            <button id="btn-options" onclick="generatePharase()"> Iniciar </button>
+            <button id="btn-reload"> Reiniciar </button>
+        </div>
+    </div>
     <script src="JS/main.js"></script>
 </body>
 </html>

@@ -1,6 +1,92 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
-    color: #FFFFFF;
-    background-color: #000000;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+#container-main {
+    background-color: #ccc;
+    width: 80%;
+    height: 60%;
+    margin: auto;
+
+    display: grid;
+    grid-template-rows: 15% 50% 15% 20%;
+    padding: 20px;
+    grid-gap: 5px;
+}
+
+#instruccions-content h1{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+#container-zone-player {
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+#container-string {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-string div {
+    margin: 2px;
+    color: #333;
+    border-bottom: 1px solid #333;
+    text-align: center;
+}
+
+#container-body-person {
+    background-color: #aaa;
+}
+
+#abc-container {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-gap: 2px;
+    justify-content: center;
+}
+
+#abc-container .conatiner-char {
+    display: grid;
+    align-items: center;
+    background-color: #aaa;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#abc-container div:hover {
+    background-color: #333;
+    color: #FFF;
+}
+
+#information-content {
+    display: grid;
+    grid-template-columns: 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+#information-content button {
+    cursor: pointer;
+    height: 70%;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #FFF;
+    transition: .3s;
+}
+
+#information-content button:hover {
+    background-color: #FFF;
+    color: #333;
 }
