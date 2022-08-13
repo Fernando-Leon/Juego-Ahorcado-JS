@@ -15,7 +15,7 @@
         </div>
         <div id="container-zone-player">
             <div id="container-string"></div>
-            <div id="container-body-person"></div>
+            <div id="container-body-person"><canvas id="canvas-ahorcado"></canvas></div>
         </div>
         <div id="abc-container">
             <div class="conatiner-char"><div class="char" onclick="checkToChart('Q')" id="key-Q">Q</div></div>
@@ -48,7 +48,18 @@
         </div>
         <div id="information-content">
             <button id="btn-inital" onclick="inital()"> Iniciar </button>
-            <button id="btn-reload" onclick="reloadPlay()"> Reiniciar </button>
+        </div>
+    </div>
+
+
+    <div id="modal">
+        <div id="content-child-modal">
+            <h2 id="msg-result"></h2>
+            <p id="more-info"></p>
+            <div id="cont-canvas-result">
+                <canvas id="canvas-result-ahorcado"></canvas>
+            </div>
+            <button onclick="reload()" id="btn-reload"> Aceptar </button>
         </div>
     </div>
     <script src="JS/main.js"></script>
