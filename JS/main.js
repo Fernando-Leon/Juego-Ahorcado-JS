@@ -1,4 +1,4 @@
-const listPharases = ["Hello World", "Inicuo", "Escuela", "Cargador", "Ingenier", "Contraccion", "Android", "I Love You Li", "Consola", "Perro", "Gato", "I love You Li", "Nutria", "Git Hub", "Ahorcado", "Arbol",];//List of phrases
+const listPharases = ["Programacion", "Inicuo", "Escuela", "Cargador", "Ingenier", "Contraccion", "Android", "I Love You Li", "Consola", "Perro", "Gato", "I love You Li", "Nutria", "Git Hub", "Ahorcado", "Arbol" ];//List of phrases
 //Variables Globals
 var keyboard = document.getElementById("abc-container");
 var areaPlace = document.getElementById("container-zone-player");
