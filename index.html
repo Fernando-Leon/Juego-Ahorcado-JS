@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google" value="notraslate">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juego del Ahorcado</title>
     <link rel="stylesheet" href="CSS/main.css" type="text/css">
+    <link rel="icon" href="ICON/icon.png">
 </head>
 <body>
     <div id="container-main">
@@ -47,7 +49,7 @@
             <div class="conatiner-char" id="key-ñ"><div class="char" onclick="checkToChart('Ñ')" id="key-Ñ">Ñ</div></div>
         </div>
         <div id="information-content">
-            <button id="btn-inital" onclick="inital()"> Iniciar </button>
+            <button id="btn-inital" onclick="inital()"> Jugar </button>
             <button id="btn-refresh" onclick="reload()"> Reiniciar </button>
         </div>
         <div id="content-btn-reload">
@@ -62,7 +64,7 @@
             <div id="cont-canvas-result">
                 <canvas id="canvas-result-ahorcado"></canvas>
             </div>
-            <button onclick="reload()" id="btn-reload"> Aceptar </button>
+            <button onclick="reload()" id="btn-reload"> Volver a jugar </button>
         </div>
     </div>
     <script src="JS/main.js"></script>
