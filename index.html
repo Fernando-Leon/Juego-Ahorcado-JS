@@ -11,51 +11,54 @@
     <div id="container-main">
         <div id="instruccions-content">
             <h1>Juego Ahorcado</h1>
-            <p>Encuentras la frase antes de ser ahorcado, cada intento fallido es un paso más a la muerte.</p>
+            <p id="intrucctions">Encuentra la frase antes de ser ahorcado, cada intento fallido es un paso más a la muerte.</p>
         </div>
         <div id="container-zone-player">
-            <div id="container-string"></div>
             <div id="container-body-person"><canvas id="canvas-ahorcado"></canvas></div>
+            <div id="container-string"></div>
         </div>
         <div id="abc-container">
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('Q')" id="key-Q">Q</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('W')" id="key-W">W</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('E')" id="key-E">E</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('R')" id="key-R">R</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('T')" id="key-T">T</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('Y')" id="key-Y">Y</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('U')" id="key-U">U</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('I')" id="key-I">I</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('O')" id="key-O">O</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('P')" id="key-P">P</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('A')" id="key-A">A</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('S')" id="key-S">S</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('D')" id="key-D">D</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('F')" id="key-F">F</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('G')" id="key-G">G</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('H')" id="key-H">H</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('J')" id="key-J">J</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('K')" id="key-K">K</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('L')" id="key-L">L</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('Ñ')" id="key-Ñ">Ñ</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('Z')" id="key-Z">Z</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('X')" id="key-X">X</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('C')" id="key-C">C</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('V')" id="key-V">V</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('B')" id="key-B">B</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('N')" id="key-N">N</div></div>
-            <div class="conatiner-char"><div class="char" onclick="checkToChart('M')" id="key-M">M</div></div>
+            <div class="conatiner-char" id="key-q"><div class="char" onclick="checkToChart('Q')" id="key-Q">Q</div></div>
+            <div class="conatiner-char" id="key-w"><div class="char" onclick="checkToChart('W')" id="key-W">W</div></div>
+            <div class="conatiner-char" id="key-e"><div class="char" onclick="checkToChart('E')" id="key-E">E</div></div>
+            <div class="conatiner-char" id="key-r"><div class="char" onclick="checkToChart('R')" id="key-R">R</div></div>
+            <div class="conatiner-char" id="key-t"><div class="char" onclick="checkToChart('T')" id="key-T">T</div></div>
+            <div class="conatiner-char" id="key-y"><div class="char" onclick="checkToChart('Y')" id="key-Y">Y</div></div>
+            <div class="conatiner-char" id="key-u"><div class="char" onclick="checkToChart('U')" id="key-U">U</div></div>
+            <div class="conatiner-char" id="key-i"><div class="char" onclick="checkToChart('I')" id="key-I">I</div></div>
+            <div class="conatiner-char" id="key-o"><div class="char" onclick="checkToChart('O')" id="key-O">O</div></div>
+            <div class="conatiner-char" id="key-p"><div class="char" onclick="checkToChart('P')" id="key-P">P</div></div>
+            <div class="conatiner-char" id="key-a"><div class="char" onclick="checkToChart('A')" id="key-A">A</div></div>
+            <div class="conatiner-char" id="key-s"><div class="char" onclick="checkToChart('S')" id="key-S">S</div></div>
+            <div class="conatiner-char" id="key-d"><div class="char" onclick="checkToChart('D')" id="key-D">D</div></div>
+            <div class="conatiner-char" id="key-f"><div class="char" onclick="checkToChart('F')" id="key-F">F</div></div>
+            <div class="conatiner-char" id="key-g"><div class="char" onclick="checkToChart('G')" id="key-G">G</div></div>
+            <div class="conatiner-char" id="key-h"><div class="char" onclick="checkToChart('H')" id="key-H">H</div></div>
+            <div class="conatiner-char" id="key-j"><div class="char" onclick="checkToChart('J')" id="key-J">J</div></div>
+            <div class="conatiner-char" id="key-k"><div class="char" onclick="checkToChart('K')" id="key-K">K</div></div>
+            <div class="conatiner-char" id="key-l"><div class="char" onclick="checkToChart('L')" id="key-L">L</div></div>
+            <div class="conatiner-char" id="key-z"><div class="char" onclick="checkToChart('Z')" id="key-Z">Z</div></div>
+            <div class="conatiner-char" id="key-x"><div class="char" onclick="checkToChart('X')" id="key-X">X</div></div>
+            <div class="conatiner-char" id="key-c"><div class="char" onclick="checkToChart('C')" id="key-C">C</div></div>
+            <div class="conatiner-char" id="key-v"><div class="char" onclick="checkToChart('V')" id="key-V">V</div></div>
+            <div class="conatiner-char" id="key-b"><div class="char" onclick="checkToChart('B')" id="key-B">B</div></div>
+            <div class="conatiner-char" id="key-n"><div class="char" onclick="checkToChart('N')" id="key-N">N</div></div>
+            <div class="conatiner-char" id="key-m"><div class="char" onclick="checkToChart('M')" id="key-M">M</div></div>
+            <div class="conatiner-char" id="key-ñ"><div class="char" onclick="checkToChart('Ñ')" id="key-Ñ">Ñ</div></div>
         </div>
         <div id="information-content">
             <button id="btn-inital" onclick="inital()"> Iniciar </button>
+            <button id="btn-refresh" onclick="reload()"> Reiniciar </button>
+        </div>
+        <div id="content-btn-reload">
         </div>
     </div>
-
 
     <div id="modal">
         <div id="content-child-modal">
             <h2 id="msg-result"></h2>
             <p id="more-info"></p>
+            <div id="pharse-correct"></div>
             <div id="cont-canvas-result">
                 <canvas id="canvas-result-ahorcado"></canvas>
             </div>
