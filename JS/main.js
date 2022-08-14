@@ -71,6 +71,8 @@ const disableKey = (value) => {//Function to disable keys
     let itemParent = document.getElementById(`key-${value}`).parentNode;
     itemParent.removeAttribute("class", "container-char");
     itemParent.setAttribute("class","char-disabled");
+    let item = document.getElementById(`key-${value}`);
+    item.setAttribute("onclick", "")
 }
 
 const inital = () => {//Funcrion to starter play

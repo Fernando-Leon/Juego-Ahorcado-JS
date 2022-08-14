@@ -6,7 +6,7 @@
 }
 
 :root {
-    --mainColor: #0A3871;
+    --mainColor: #45326E;
     --colorText: #000000;
     --backColor: #FFFFFF;
 }
@@ -73,14 +73,16 @@ body {
     border: 1px solid transparent;
 }
 
-#abc-conainer .char-disabled {
+#abc-container .char-disabled {
     display: grid;
     align-items: center;
     background-color: var(--backColor);
     text-align: center;
     cursor: pointer;
+    border-radius: 5px;
     border: solid 1px var(--mainColor);
-    color: var(--backColor);
+    color: var(--mainColor);
+    cursor: no-drop;
 }
 
 #abc-container .conatiner-char:hover {
