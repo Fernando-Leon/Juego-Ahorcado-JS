@@ -1,0 +1,56 @@
+@media (max-width: 450px){
+    #container-main {
+        padding: 15px;
+        width: 80% !important;
+    }
+    #container-string div {
+        margin: 1px;
+    }
+    #msg-result {
+        font-size: 25px;
+        font-weight: 400;
+    }
+    #more-info {
+        font-weight: 300;
+    }
+}
+
+@media (min-width: 450px) {
+    #container-main {
+        width: 50% !important;
+    }
+    #container-zone-player {
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 30% 70%;
+    }
+    #container-string {
+        align-self: end;
+        grid-row: 2/3;
+    }
+    #container-body-person {
+        grid-row: 1/3;
+    }
+
+    #content-child-modal {
+        width: 50% !important;
+        height: 70% !important;
+    }
+}
+
+@media (min-width: 900px) {
+    #container-main {
+        width: 40% !important;
+    }
+
+    #content-child-modal {
+        width: 35% !important;
+        height: 70% !important;
+    }
+}
+
+@media (max-height: 700px){
+    #instruccions-content h1 {
+        font-size: 20px;
+        font-weight: 900;
+    }
+}

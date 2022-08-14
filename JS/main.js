@@ -1,4 +1,4 @@
-const listPharases = ["Hello world", "Java Script", "School Garden", "Love Programming", "Ingenier Developer", "Space X", "Elon Musk", "Indra Li", "I Love You Li"];//List of phrases
+const listPharases = ["Hello World", "Inicuo", "Escuela", "Cargador", "Ingenier", "Contraccion", "Android", "I Love You Li", "Consola", "Perro", "Gato", "I love You Li", "Nutria", "Git Hub", "Ahorcado", "Arbol",];//List of phrases
 //Variables Globals
 var keyboard = document.getElementById("abc-container");
 var areaPlace = document.getElementById("container-zone-player");
@@ -31,6 +31,7 @@ const generateZonePlay = () => {//Generate area play - return: data -> [phrase, 
         if(phrase[i] === " "){
             numberChars--; 
             itemChar.setAttribute("class", "space-char");
+            itemCharResult.setAttribute("class", "space-char");
         }
         fragment.appendChild(itemChar);
         fragmentResult.appendChild(itemCharResult);
@@ -75,15 +76,14 @@ const disableKey = (value) => {//Function to disable keys
     item.setAttribute("onclick", "")
 }
 
-const inital = () => {//Funcrion to starter play
+const inital = () => {//Function to starter play
     data = generateZonePlay(); 
     keyboard.style.display = "grid";
     areaPlace.style.display = "grid";
     instrucctions.style.display = "inline";
     btnReload.style.display = "inline";
     let area = document.getElementById("container-main");
-    area.style.width = "70%";
-    area.style.height = "70%";
+    area.style.height = "75%";
     area.style.gridTemplateRows = "15% 55% 20% 10%";
     document.getElementById("btn-inital").style.display = 'none';
 }
@@ -94,13 +94,13 @@ const modalShow = (result, phrase) => {
     if(result){
         msgResult.innerHTML = "GANASTE";
         msgResult.setAttribute("class", "winner");
-        msgMoreInformation.innerHTML = `La palabra es: ${phrase}`;
+        msgMoreInformation.innerHTML = "La palabra es:";
         winnerCanvas();
     }
     else {
         msgResult.innerHTML = "PERDISTE";
         msgResult.setAttribute("class", "loser");
-        msgMoreInformation.innerHTML = `La palabra era: ${phrase}`;
+        msgMoreInformation.innerHTML = "La palabra era:";
         loserCanvas();
     }
 
@@ -116,12 +116,12 @@ var counterFailed = 0;
 //Coordinates fillRect(x, y, width, heigth)
 const intentFailed = () => {//Function to generate canvas item ahorcado
     counterFailed++;
-    context.fillStyle = "#0A3871";
-    if(counterFailed === 1){context.fillRect(10, 145, 90, 1);}//Item - 1
-    if(counterFailed === 2){context.fillRect(50, 5, 2, 140);}//Item - 2
+    context.fillStyle = "#3E5F8A";
+    if(counterFailed === 1){context.fillRect(10, 149, 90, 1);}//Item - 1
+    if(counterFailed === 2){context.fillRect(50, 5, 2, 149);}//Item - 2
     if(counterFailed === 3){context.fillRect(50, 5, 126, 1);}//Item - 3
     if(counterFailed === 4){context.fillRect(174, 5, 2, 18);}//Item - 4
-    if(counterFailed === 5){context.strokeStyle = "#0A3871";context.strokeRect(155, 23, 40, 16);}//Item - 5 - HEAD
+    if(counterFailed === 5){context.strokeStyle = "#3E5F8A";context.strokeRect(155, 23, 40, 16);}//Item - 5 - HEAD
     if(counterFailed === 6){context.fillRect(174, 39, 2, 50);}//Item - 6 - body
     if(counterFailed === 7){// Item - 7 hands
         context.beginPath();
@@ -142,7 +142,7 @@ const intentFailed = () => {//Function to generate canvas item ahorcado
         context.moveTo(175, 89);
         context.lineTo(205,110);
         context.stroke();
-        context.strokeStyle = "#0A3871";
+        context.strokeStyle = "#3E5F8A";
     }
 }
 
@@ -150,12 +150,12 @@ var cr = document.getElementById("canvas-result-ahorcado");
 var contextr = cr.getContext("2d");
 
 const winnerCanvas = () => {
-    contextr.fillStyle = "#FFFFFF";
+    contextr.fillStyle = "#3E5F8A";
     contextr.beginPath();
-    contextr.strokeStyle = "#0A3871";
+    contextr.strokeStyle = "#3E5F8A";
     contextr.strokeRect(155, 23, 40, 16);
     contextr.beginPath();
-    contextr.fillStyle = "#0A3871";
+    contextr.fillStyle = "#3E5F8A";
     contextr.fillRect(174, 39, 2, 50);
     contextr.beginPath();
     contextr.moveTo(175, 39);
@@ -173,20 +173,20 @@ const winnerCanvas = () => {
     contextr.moveTo(175, 89);
     contextr.lineTo(205,110);
     contextr.stroke();
-    contextr.strokeStyle = "#0A3871";
+    contextr.strokeStyle = "#3E5F8A";
 }
 
 const loserCanvas = () => {
-    contextr.fillStyle = "#0A3871";
+    contextr.fillStyle = "#3E5F8A";
     contextr.fillRect(10, 145, 90, 1);
     contextr.fillRect(50, 5, 2, 140);
     contextr.fillRect(50, 5, 126, 1);
     contextr.fillRect(174, 5, 2, 18);
     contextr.beginPath();
-    contextr.strokeStyle = "#0A3871";
+    contextr.strokeStyle = "#3E5F8A";
     contextr.strokeRect(155, 23, 40, 16);
     contextr.beginPath();
-    contextr.fillStyle = "#0A3871";
+    contextr.fillStyle = "#3E5F8A";
     contextr.fillRect(174, 39, 2, 50);
     contextr.beginPath();
     contextr.moveTo(175, 39);
@@ -204,7 +204,7 @@ const loserCanvas = () => {
     contextr.moveTo(175, 89);
     contextr.lineTo(205,110);
     contextr.stroke();
-    contextr.strokeStyle = "#0A3871";
+    contextr.strokeStyle = "#3E5F8A";
 }
 
 console.log(data);
